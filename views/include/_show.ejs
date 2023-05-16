@@ -1,0 +1,16 @@
+
+
+<% for( let i = 0; i < user.length; i++ ) { %>
+    <tr>
+        <td><%= i+1 %> </td>
+        <td><%= user[i].name %> </td>
+        <td><%= user[i].email %> </td>
+        <td><%= user[i].gender %> </td>
+        <td><%= user[i].status %> </td>
+        <td>
+            <a href="/update-user?id=<%= user[i]._id%>" class="btn btn-sm btn-secondary"><i class="fa fa-pencil-square-o"></i></a>
+            <a data-id= <%= user[i]._id %> class="btn btn-sm btn-danger mx-2 delete"><i class="fa fa-trash-o"></i></a>
+        </td>
+    </tr>
+    
+<% } %>

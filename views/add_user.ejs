@@ -1,0 +1,25 @@
+<%- include('./include/_header.ejs') %>
+
+    <body class="bg-warning">
+
+        <%- include('include/_navbar') %>
+
+        <main>
+            <div class="container mt-5">
+
+                <div class="text-left">
+                    <a href="/home" class="border-shadow">
+                        <span class="text-dark"><i class="fa fa-angle-double-left"></i>
+                            All Users <i class="fa fa-users" aria-hidden="true"></i> </span>
+                    </a>
+                </div>
+                <!-- user_form creation  -->
+
+                <%- include('./include/_form.ejs') %>
+             
+
+            </div>
+        </main>
+
+
+<%- include('./include/_footer.ejs')  %> 
